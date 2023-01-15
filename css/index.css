@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.logo > img {
+  width: 50px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav{
+  text-align:left;
+  background-color:gray;
+  margin-left: 10px;
+}
+ul{
+  list-style: none;
+}
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+  color:white
+}
+.menu {
+  display: none;
+}
+.product{
+  border:solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: center;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Ipads   */
+@media(min-width: 768px) and (max-width: 1024px){
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .logo > img {
+    width: 50px;
+    justify-content: left;
+    margin-right: 75px;
+  }
+  
+  header{
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  
+  nav{
+    text-align:left;
+    background-color:gray;
+    margin-left: 10px;
+  }
+  ul{
+    list-style: none;
+  }
+  .hamburger{
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+  }
+  .menu {
+    display: none;
+  }
+  .product{
+    border:solid;
+    border-width: 1px;
+    border-color: gray;
+    justify-items: center;
+  }
+  p{
+    text-align: left;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+/* Large Screen   */
+@media(min-width: 1025px){
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .logo > img {
+    width: 50px;
+    justify-content: left;
+    margin-right: 75px;
+  }
+  
+  header{
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav{
+    text-align:left;
+    background-color:gray;
+    margin-left: 10px;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  .hamburger{
+    display: none;
+    justify-content: flex-end;
+    color:white;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: right;
+  }
+  li{
+    margin-right: 20px;
+  }
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.product{
+  width: 33%;
+  border-width: 0px;
+  justify-items: center;
+}
+p{
+  text-align: left;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+}
